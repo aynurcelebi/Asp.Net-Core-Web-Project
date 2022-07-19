@@ -18,5 +18,8 @@ namespace DataAccessLayer.Concrete
         {
             optionsBuilder.UseSqlServer("server= DESKTOP-07T8MF2\\MSSQLSERVER01;database=CoreProjeDB; integrated security= true");
         }
+        // proporti'ler tanımlanacak ve entity katmanı içerinde bulunan sınıflar çağırılacak;
+
+        public int MyProperty { get; set; }
     }
 }
