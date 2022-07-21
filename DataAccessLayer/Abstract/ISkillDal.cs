@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    public interface IAboutDal
+    public interface ISkillDal
     {
-        void Insert(About p);
-        void Update(About p);
-        void Delete(About p);
-        List<About> GetList(About p);
+        void Insert(Skill p);
+        void Update(Skill p);  
+        void Delete(Skill p);
+        List<Skill> GetList();
     }
 }
