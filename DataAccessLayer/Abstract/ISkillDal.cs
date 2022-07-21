@@ -7,11 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    public interface ISkillDal
+    public interface ISkillDal: IGenericDal<Skill>
     {
-        void Insert(Skill p);
-        void Update(Skill p);  
-        void Delete(Skill p);
-        List<Skill> GetList();
     }
 }
