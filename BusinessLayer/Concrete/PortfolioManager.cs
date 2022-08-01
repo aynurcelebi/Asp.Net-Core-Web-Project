@@ -15,7 +15,7 @@ namespace BusinessLayer.Concrete
 
         public PortfolioManager(IPortfolioDal portfolioDal)
         {
-            this.portfolioDal = portfolioDal;
+            this._portfolioDal = portfolioDal;
         }
 
         public Portfolio GetByID(int id)
@@ -41,5 +41,7 @@ namespace BusinessLayer.Concrete
         public void TUpdate(Portfolio t)
         {
             _portfolioDal.Update(t);
+        }
+
     }
 }
